@@ -2,7 +2,10 @@
 
 import subprocess
 
-subprocess.call("ifconfig wlan0 down", shell=True)
-subprocess.call("ifconfig wlan0 hw ether 00:11:22:33:44:66", shell=True) #set MAC Address
-subprocess.call("ifconfig wlan0 up", shell=True)
-#Can be run in PyCharm or in Terminal
+interface = "wlan0"
+
+print("[+] Changing MAC address for " + interface)
+
+# subprocess.call("ifconfig wlan0 down", shell=True)
+# subprocess.call("ifconfig wlan0 hw ether 00:11:22:33:44:66", shell=True) #set MAC Address
+# subprocess.call("ifconfig wlan0 up", shell=True)
