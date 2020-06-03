@@ -1,3 +1,9 @@
+# Ethical Hacking with Python
+In this repository I will be creating handy to have scripts for aspiring ethical hackers like myself.
+You will find below a list of script names, descriptors and why they are needed.
+
+As stated in the description these are for educational and white hat use only.
+
 # MAC-Changer
 A program that changes a user's MAC Address
 
