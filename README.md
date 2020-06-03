@@ -4,7 +4,7 @@ You will find below a list of script names, descriptors and why they are needed.
 
 As stated in the description these are for educational and white hat use only.
 
-# MAC-Changer
+# MAC-Changer.py
 A program that changes a user's MAC Address
 
 Media Access Control
