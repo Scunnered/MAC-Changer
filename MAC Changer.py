@@ -2,6 +2,7 @@
 
 import subprocess
 import optparse
+import re
 
 
 def get_arguments():
@@ -28,3 +29,5 @@ options = get_arguments()
 
 ifconfig_result = subprocess.check_output(["ifconfig", options.interface])
 print(ifconfig_result)
+        
+re.search(r"\w\w:\w\w:\w\w:\w\w:\w\w")
