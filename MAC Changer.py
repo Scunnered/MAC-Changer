@@ -35,4 +35,4 @@ mac_address_search_result = re.search(r"\w\w:\w\w:\w\w:\w\w:\w\w", ifconfig_resu
 if mac_address_search_result:
     print(mac_address_search_result.group(0))
 else:
-    print("[-] Could not read MAC address.");
+    print("[-] Could not read MAC address.")
