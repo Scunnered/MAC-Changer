@@ -11,9 +11,9 @@ def get_arguments():
   parser.add_option("-m", "--mac", dest="new_MAC", help="New MAC address")
   (options, arguments) = return parser.parse_args()
   if not options.interface: 
-      parser.error("[-] Please specify an interface, use --help for more information")
+      parser.error("Specify an interface like wlan0 or eth0, use --help for more information")
   elif not options.new_mac:
-      parser.error("[-] Please specify a new MAC, use --help for more information")
+      parser.error("Specify a new MAC, use --help for more information")
   return options
 
   
@@ -31,7 +31,7 @@ def get_current_mac(interface):
     if mac_address_search_result:
       return mac_address_search_result.group(0)
     else:
-      print("[-] Could not read MAC address.")
+      print("MAC address unreadable.")
 
 
 options = get_arguments() 
@@ -43,6 +43,6 @@ change_mac(options.interface, options.new_mac)
 
 current_mac = get_current_mac(options.interface)
 if current_mac == option.new_mac:
-      print("[+] Mac address was successfully changed to " + current_mac)
+      print("Mac address was successfully changed to " + current_mac)
 else:
-      print("[-] MAC address was not changed.")
+      print("MAC address was not changed.")
