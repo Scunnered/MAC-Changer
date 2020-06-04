@@ -10,7 +10,7 @@ Kali - https://www.offensive-security.com/kali-linux-vm-vmware-virtualbox-image-
 
 As stated in the description... each script is for educational use only!
 
-# MAC-Changer.py
+# Media Access Control Address changer.py
 A program that changes a user's MAC Address
 
 Media Access Control
