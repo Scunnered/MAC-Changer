@@ -10,7 +10,7 @@ Kali - https://www.offensive-security.com/kali-linux-vm-vmware-virtualbox-image-
 
 As stated in the description... each script is for educational use only!
 
-# Media Access Control Address changer.py
+# MAC changer.py
 A program that changes a user's MAC Address
 
 Media Access Control
@@ -24,4 +24,10 @@ Why Change the Mac Address?
 2. Impersonate other devices
 3. Bypass filters
 
-# 
+# Network_Scanner.py
+A program that scans devices on a network
+
+Why would you want to scan a network?
+1. Discover all devices on the network
+2. Display their IP address
+3. Display their MAC address
