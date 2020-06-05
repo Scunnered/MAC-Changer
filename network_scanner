@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-import scapy.all as scapy
+import scapy.all as scapy #Scapy is a Python program that enables the user to send, sniff and dissect and forge network packets. This capability allows construction of tools that can probe, scan or attack networks
 
 def scan (ip):
     scapy.arping(ip)
