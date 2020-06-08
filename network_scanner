@@ -16,8 +16,8 @@ def scan (ip):
 
 def print_result(results_list):
     print("IP\t\t\tMAC Address\n-------------------------------------")
-    for client in results_list
-        print(client["ip"] + "\t\t" + client["MAC"])
+    for client in results_list:
+        print(client["IP"] + "\t\t" + client["MAC"])
 
     scan_result = scan("10.0.2.1/24")
     print_result(scan_result)
