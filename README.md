@@ -38,3 +38,13 @@ A program that sends falsified ARP (Address Resolution Protocol) messages over a
 Why ARP spoofing is possible
 1. Clients accept responses even if they did not send a request.
 2. Clients trust response without any form of verification.
+
+# Packet Sniffer
+A program that can that can intercept and log traffic that passes over a digital network or part of a network.
+
+1. Capture data flowing through an interface
+2. Filter thid data
+3. Display interesting infomration such as
+- login info
+- visited webites
+- images
