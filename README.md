@@ -31,3 +31,10 @@ Why would you want to scan a network?
 1. Discover all devices on the network
 2. Display their IP address
 3. Display their MAC address
+
+# ARP Spoofing
+A program that sends falsified ARP (Address Resolution Protocol) messages over a local area network. This results in the linking of an attacker's MAC address with the IP address of a legitimate computer or server on the network.
+
+Why ARP spoofing is possible
+1. Clients accept responses even if they did not send a request.
+2. Clients trust response without any form of verification.
