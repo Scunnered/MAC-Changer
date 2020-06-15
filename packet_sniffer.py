@@ -1,10 +1,12 @@
 #!/usr/bin/env python
 import scapy.all as scapy
+from scapy.layer import http
 
 def sniff(interface):
     scapy.sniff(iface=interface, store=False, prn=process_sniffed_packet)
 
 def process_sniffed_packet(packet):
-    print(packet)
+    if packet.hayslayer(http.HTTPREQUEST):
+        print(packet)
 
 sniff("eth0")
