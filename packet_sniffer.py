@@ -7,6 +7,7 @@ def sniff(interface):
 
 def process_sniffed_packet(packet):
     if packet.hayslayer(http.HTTPREQUEST):
-        print(packet)
+        if packet.haslayer(scapy.Raw):
+            print(packet)
 
 sniff("eth0")
