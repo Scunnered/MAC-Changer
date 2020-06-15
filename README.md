@@ -48,3 +48,12 @@ A program that can that can intercept and log traffic that passes over a digital
 - login info
 - visited webites
 - images
+
+# DNS Spoofer
+A program that intercepts and modifies Packets using Scapy
+
+1. Scapy can be used to
+-Create packets
+-Analyse packets
+- Send/receive packets
+(Can't be used to intercept packet/flows)
