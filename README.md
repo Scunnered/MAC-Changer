@@ -10,7 +10,7 @@ Kali - https://www.offensive-security.com/kali-linux-vm-vmware-virtualbox-image-
 
 As stated in the description... each script is for educational use only!
 
-# MAC changer.py
+# MAC changer
 A program that changes a user's MAC Address
 
 Media Access Control
@@ -24,7 +24,7 @@ Why Change the Mac Address?
 2. Impersonate other devices
 3. Bypass filters
 
-# Network_Scanner.py
+# Network Scanner
 A program that scans devices on a network
 
 Why would you want to scan a network?
@@ -52,8 +52,12 @@ A program that can that can intercept and log traffic that passes over a digital
 # DNS Spoofer
 A program that intercepts and modifies Packets using Scapy
 
-1. Scapy can be used to
+Scapy can be used to
 -Create packets
 -Analyse packets
 - Send/receive packets
 (Can't be used to intercept packet/flows)
+
+# File Interceptor
+Program created as "replace_downloads.py"
+MITM - Modifying Data program that intercepts communications between two parties either to secretly eavesdrop or modify traffic traveling between the two.
