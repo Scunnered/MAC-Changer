@@ -63,7 +63,7 @@ Program created as "replace_downloads.py"
 MITM - Modifying Data program that intercepts communications between two parties either to secretly eavesdrop or modify traffic traveling between the two.
 
 # Malware
-Program referred to execute_command.py
+Program referred to execute_command.py / download.py /
 - Download file
 - Execute code
 - Send report
