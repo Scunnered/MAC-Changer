@@ -61,3 +61,12 @@ Scapy can be used to
 # File Interceptor
 Program created as "replace_downloads.py"
 MITM - Modifying Data program that intercepts communications between two parties either to secretly eavesdrop or modify traffic traveling between the two.
+
+# Malware
+Program referred to execute_command.py
+- Download file
+- Execute code
+- Send report
+- Download & execute
+- Execute & report
+- Download, execute & report
