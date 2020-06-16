@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/Python-Ethical-Hacking.iml" filepath="$PROJECT_DIR$/.idea/Python-Ethical-Hacking.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../DNS Spoof/.idea/DNS Spoof.iml" filepath="$PROJECT_DIR$/../DNS Spoof/.idea/DNS Spoof.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Python-Ethical-Hacking/.idea/Python-Ethical-Hacking.iml" filepath="$PROJECT_DIR$/../Python-Ethical-Hacking/.idea/Python-Ethical-Hacking.iml" />
     </modules>
   </component>
 </project>
