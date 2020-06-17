@@ -63,10 +63,17 @@ Program created as "replace_downloads.py"
 MITM - Modifying Data program that intercepts communications between two parties either to secretly eavesdrop or modify traffic traveling between the two.
 
 # Malware
-Program referred to execute_command.py / download.py /
+Program referred to execute_command.py / download.py
 - Download file
 - Execute code
 - Send report
 - Download & execute
 - Execute & report
 - Download, execute & report
+
+# Keylogger
+A program that records keys pressed on the keyboard (OOP) 
+- Store logs locally (local keyloggers)
+- Reports logs to email or remote server (remote keyloggers)
+- Log screenshots
+- Starts with system startup
