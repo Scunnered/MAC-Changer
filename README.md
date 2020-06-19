@@ -77,3 +77,13 @@ A program that records keys pressed on the keyboard (OOP)
 - Reports logs to email or remote server (remote keyloggers)
 - Log screenshots
 - Starts with system startup
+
+# Crawler
+crawling subdomains
+-Domain before the actual domain name
+-part of the main domain
+
+EX:
+-subdomain.target.com
+-mail.google.com
+plus.google.com
