@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 
 import requests
+import re
 
 def request(url):
     try:
@@ -11,4 +12,7 @@ def request(url):
 target_url = "zsecurity.org"
 
 response = request(target_url)
-print(response.content)
+
+href_links = re.findall('(?:href=")(.+?)"', response.content)
+
+print(href_links)
