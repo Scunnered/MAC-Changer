@@ -79,11 +79,13 @@ A program that records keys pressed on the keyboard (OOP)
 - Starts with system startup
 
 # Crawler
-crawling subdomains
+A program that systematically browses the Web, crawling subdomains
 -Domain before the actual domain name
 -part of the main domain
-
 EX:
 -subdomain.target.com
 -mail.google.com
 plus.google.com
+
+# Guessing Login Information
+a Program called post.py To Guess Login Information
