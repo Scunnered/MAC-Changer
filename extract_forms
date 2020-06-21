@@ -14,4 +14,14 @@ request = request(target_url)
 
 parsed_html = BeautifulSoup(response.content)
 from_list = parsed_html.findAll("from")
-print(forms_list)
+
+for form in forms_list:
+    action = form.get("action")
+    print(action)
+    method = form.get("method")
+    print(method)
+
+    inputs_list = form.findAll("input")
+    for input in inputs_list:
+        input_name = input.get("name")
+        print(input_name)
