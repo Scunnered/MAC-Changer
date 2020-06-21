@@ -83,7 +83,11 @@ A program that can that can intercept and log traffic that passes over a digital
 - images
 
 # Vulnerability Scanner
-
+A program that can discover vulnerabilities in a web application. includes scanner.py, vulnerability scanner and extract_forms.
+1. Go into every possible page.
+2. look for ways to send data to the web application (URL + Forms)
+3. Send payloads to discover Vulnerabilities
+4. Analyse the response to check of the website is vulnerable
 
 # Network Scanner
 A program that scans devices on a network
