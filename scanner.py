@@ -59,7 +59,7 @@ class Scanner:
         for link in self.target_links:
             forms = self.extract_forms(link)
             for form in forms:
-                print("-/- Testing form in " + link)
+                print("-/- Testing form  " + link)
 
             if "=" in link:
                 print("-/- Testing " + link)
