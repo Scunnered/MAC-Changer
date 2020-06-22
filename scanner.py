@@ -64,6 +64,12 @@ class Scanner:
             if "=" in link:
                 print("-/- Testing " + link)
 
+    def test_xss_in_link(selfself, url):
+        xss_test_script = "<Script>alert('test')</Script>"
+        url = url.replaced("=", "=" + xss_test_script)
+        response = self.session.get(url)
+        return xss_test_script in response.content
+
     def test_xss_in_form(self, form, url):
         xss_test_script = "<Script>alert('test')</Script>"
         response = self.submit_form(form, xss_test_script, url)
