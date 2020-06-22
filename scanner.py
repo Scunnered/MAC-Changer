@@ -60,9 +60,15 @@ class Scanner:
             forms = self.extract_forms(link)
             for form in forms:
                 print("-/- Testing form  " + link)
+                is_vulnerable_to_xss = self.test.test_xss_in_form(form, link)
+                if is_vulnerable_to_xss:
+                    print("\n\n -/- XSS discovered in " + link + " in the follwing form")
 
             if "=" in link:
                 print("-/- Testing " + link)
+                is_vulnerable_to_xss = self.test_xss_in_link(link)
+                if is_vulnerable_to_xss:
+                    print("-/- Discovered XSS in " + link)
 
     def test_xss_in_link(selfself, url):
         xss_test_script = "<Script>alert('test')</Script>"
@@ -73,5 +79,4 @@ class Scanner:
     def test_xss_in_form(self, form, url):
         xss_test_script = "<Script>alert('test')</Script>"
         response = self.submit_form(form, xss_test_script, url)
-        if xss_test_script in response.content:
-            return True
+        return xss_test_script in response.content
